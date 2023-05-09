@@ -4,8 +4,8 @@ import "./Header.css";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider"
-import Grid from '@mui/material/Grid'; // Grid version 1
-import Coffeeicon from "./coffeeicon.png";
+// import Grid from '@mui/material/Grid'; // Grid version 1
+// import Coffeeicon from "./coffeeicon.png";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -16,7 +16,7 @@ function Header() {
     <div className="header">
      
      
-      <Link to="/">
+      <Link style={{textDecoration: 'none'}} to="/">
         {/* <img
           className="header__logo"
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"

@@ -5,8 +5,8 @@
     width:300px;
     height: 100px;
     padding: 20px;
-    background-color: #F7F3E3;
-     border: 2px dashed #A8763E; 
+    /* background-color: #ECF0F1; */
+     border: 3px solid #A8763E; 
     border-radius: 10px;
     justify-content: center;
     margin-left: auto;
