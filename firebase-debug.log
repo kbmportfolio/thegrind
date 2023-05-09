@@ -1,0 +1,142 @@
+[debug] [2023-05-04T23:09:30.183Z] ----------------------------------------------------------------------
+[debug] [2023-05-04T23:09:30.185Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kmera\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-04T23:09:30.186Z] CLI Version:   11.30.0
+[debug] [2023-05-04T23:09:30.186Z] Platform:      win32
+[debug] [2023-05-04T23:09:30.186Z] Node Version:  v18.14.1
+[debug] [2023-05-04T23:09:30.187Z] Time:          Thu May 04 2023 16:09:30 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-05-04T23:09:30.187Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-04T23:09:30.194Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-04T23:09:30.195Z] > authorizing via signed-in user (kbmeratinia@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kmera\Desktop\Dev Folder\material-ui-practice
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-04T23:13:22.338Z] > refreshing access token with scopes: []
+[debug] [2023-05-04T23:13:22.344Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-04T23:13:22.344Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-04T23:13:22.519Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-04T23:13:22.520Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-04T23:13:22.533Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-05-04T23:13:22.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-05-04T23:13:22.919Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ecomm-app-2745c (ecomm-app) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-05-04T23:13:29.734Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-05-04T23:13:29.734Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:13:30.319Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com 200
+[debug] [2023-05-04T23:13:30.319Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-05-04T23:13:30.321Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-05-04T23:13:30.321Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:13:30.866Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-05-04T23:13:30.867Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-05-04T23:13:40.876Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-05-04T23:13:40.876Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:13:41.361Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com 200
+[debug] [2023-05-04T23:13:41.361Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-05-04T23:13:41.363Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecomm-app-2745c [none]
+[debug] [2023-05-04T23:13:41.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecomm-app-2745c 200
+[debug] [2023-05-04T23:13:41.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecomm-app-2745c {"projectId":"ecomm-app-2745c","projectNumber":"804654030762","displayName":"ecomm-app","name":"projects/ecomm-app-2745c","resources":{"hostingSite":"ecomm-app-2745c"},"state":"ACTIVE","etag":"1_0dfc66bc-166e-4b18-b234-39eea6dd2889"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to firebase deploy. 
+[info] Future modifications to firebase deploy will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-05-04T23:14:07.851Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firestore.googleapis.com [none]
+[debug] [2023-05-04T23:14:07.852Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firestore.googleapis.com x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:14:08.347Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firestore.googleapis.com 200
+[debug] [2023-05-04T23:14:08.348Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/firestore.googleapis.com [omitted]
+[debug] [2023-05-04T23:14:08.350Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default) [none]
+[debug] [2023-05-04T23:14:08.959Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default) 200
+[debug] [2023-05-04T23:14:08.959Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default) {"name":"projects/ecomm-app-2745c/databases/(default)","uid":"52a924ae-047c-4761-aaf4-851f4b207ed1","createTime":"2023-05-04T05:26:07.322952Z","updateTime":"2023-05-04T05:26:07.322952Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJ3Zg6Pl3P4CMKXr2q332v4C"}
+[debug] [2023-05-04T23:14:08.959Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-05-04T23:14:08.960Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-04T23:14:08.960Z] > authorizing via signed-in user (kbmeratinia@gmail.com)
+[debug] [2023-05-04T23:14:08.960Z] [iam] checking project ecomm-app-2745c for permissions ["firebase.projects.get"]
+[debug] [2023-05-04T23:14:08.961Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions [none]
+[debug] [2023-05-04T23:14:08.961Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:14:08.961Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-04T23:14:09.116Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions 200
+[debug] [2023-05-04T23:14:09.116Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-05-04T23:14:14.073Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ecomm-app-2745c/releases pageSize=10&pageToken=
+[debug] [2023-05-04T23:14:14.295Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ecomm-app-2745c/releases 200
+[debug] [2023-05-04T23:14:14.296Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ecomm-app-2745c/releases {"releases":[{"name":"projects/ecomm-app-2745c/releases/cloud.firestore","rulesetName":"projects/ecomm-app-2745c/rulesets/9364510c-6b9c-4bab-834a-c6948219df94","createTime":"2023-05-04T05:26:09.412310Z","updateTime":"2023-05-04T05:26:09.412310Z"}]}
+[debug] [2023-05-04T23:14:14.296Z] Found ruleset: projects/ecomm-app-2745c/rulesets/9364510c-6b9c-4bab-834a-c6948219df94
+[debug] [2023-05-04T23:14:14.297Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ecomm-app-2745c/rulesets/9364510c-6b9c-4bab-834a-c6948219df94 [none]
+[debug] [2023-05-04T23:14:14.475Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ecomm-app-2745c/rulesets/9364510c-6b9c-4bab-834a-c6948219df94 200
+[debug] [2023-05-04T23:14:14.475Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ecomm-app-2745c/rulesets/9364510c-6b9c-4bab-834a-c6948219df94 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-05-04T23:14:16.361Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-05-04T23:14:16.365Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-05-04T23:14:16.770Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-05-04T23:14:16.770Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-05-04T23:14:16.837Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-05-04T23:14:16.837Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ecomm-app-2745c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/ecomm-app-2745c/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-05-04T23:14:16.846Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-04T23:14:16.847Z] > authorizing via signed-in user (kbmeratinia@gmail.com)
+[debug] [2023-05-04T23:14:16.847Z] [iam] checking project ecomm-app-2745c for permissions ["firebase.projects.get"]
+[debug] [2023-05-04T23:14:16.848Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions [none]
+[debug] [2023-05-04T23:14:16.848Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:14:16.848Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-04T23:14:16.946Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions 200
+[debug] [2023-05-04T23:14:16.946Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecomm-app-2745c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-04T23:14:16.947Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-05-04T23:14:16.947Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:14:16.949Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-05-04T23:14:16.949Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:14:17.451Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/runtimeconfig.googleapis.com 200
+[debug] [2023-05-04T23:14:17.451Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-05-04T23:14:17.455Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com 200
+[debug] [2023-05-04T23:14:17.455Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-05-04T23:14:17.455Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-05-04T23:14:17.455Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:14:18.116Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-05-04T23:14:18.116Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-05-04T23:14:28.121Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-05-04T23:14:28.121Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ecomm-app-2745c
+[debug] [2023-05-04T23:14:28.668Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com 200
+[debug] [2023-05-04T23:14:28.669Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecomm-app-2745c/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+

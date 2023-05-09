@@ -1,0 +1,131 @@
+@font-face {
+  font-family: coffee;
+  src: url(coffee.ttf);
+}
+
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #650D1B;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 600px) { 
+  .header {
+    height: 90px;
+  }
+
+  .header__logo {
+    width: 400px;
+  }
+
+  h1 {
+    font-family: coffee;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 28px;
+    
+  }
+}
+
+
+.header__logo {
+  width: 200px;
+ 
+  margin: 0 20px;
+  margin-top: 18px;
+ padding-left: 20px;
+  
+}
+
+/* .header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+} */
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd9042;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: right;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: 62%;
+  align-items: right;
+  margin-right: 10%;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+h1 {
+  font-family: coffee;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  
+}
+
+.carttext {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.coffeeicon {
+  background-image: url("./coffeeicon.png");
+  height: 30px;
+  width: 30px;
+  float: right;
+}
+
