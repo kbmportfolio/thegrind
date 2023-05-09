@@ -93,7 +93,7 @@ export default function PrimarySearchAppBar() {
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
-    <Menu
+    <Menu 
       anchorEl={anchorEl}
       anchorOrigin={{
         vertical: 'top',
@@ -149,7 +149,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar style={{background: "#650D1B", marginBottom:"20px"}} position="static">
         <Toolbar>
           <Coffee
             size="large"
@@ -165,8 +165,9 @@ export default function PrimarySearchAppBar() {
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
+          ><Link  to="/" style={{textDecoration: "none"}} >
            <h1>The Grind</h1> 
+           </Link>
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -180,7 +181,7 @@ export default function PrimarySearchAppBar() {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
           <Link to="/checkout">
-            <IconButton
+            <IconButton 
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
