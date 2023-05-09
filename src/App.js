@@ -4,13 +4,15 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header"
 import Checkout from "./components/Checkout/Checkout"
+import HeaderNAV  from "./components/HeaderNAV/HeaderNAV"
 // import Payment from "./components/Payment/Payment";
 
 function App() {
   return (
     <div>
       <Router>
-      <Header /> 
+      {/* <Header />  */}
+      <HeaderNAV />
         <Routes>
          
           <Route path="/" element={<Home />} />
